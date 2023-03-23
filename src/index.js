@@ -4,7 +4,6 @@ import { GlobalStyle } from "./core/GlobalStyle";
 import { HashRouter } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./core/theme";
-import './index.css';
 import App from './core/App';
 import reportWebVitals from './reportWebVitals';
 
