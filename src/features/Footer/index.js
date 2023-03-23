@@ -1,9 +1,10 @@
 import { StyledFooter} from "./styled";
+import Clock from "../Clock";
 
 const Footer = () => {
   return (
       <StyledFooter>
-        <p>godzina: 10:00</p>
+        <Clock />
         <p>Liczba aartykułów na stronie: 100</p>
       </StyledFooter>
   );
