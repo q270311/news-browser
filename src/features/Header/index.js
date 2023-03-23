@@ -4,7 +4,7 @@ import SwitchListTile from '../SwitchListTile';
 const Header = () => {
   return (
       <StyledHeader>
-        <NavigationLink to="/country/US" >
+        <NavigationLink to="/" >
           News Browser
         </NavigationLink>
         <SwitchListTile />
