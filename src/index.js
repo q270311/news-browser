@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { GlobalStyle } from "./core/GlobalStyle";
+import { HashRouter } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./core/theme";
 import './index.css';
@@ -11,9 +12,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-        <GlobalStyle />
-          <App />
-      </ThemeProvider>
+      <GlobalStyle />
+      <HashRouter>
+        <App />
+      </HashRouter>
+    </ThemeProvider>
   </React.StrictMode>
 );
 
