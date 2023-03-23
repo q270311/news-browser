@@ -1,24 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+//import { Routes, Route, Navigate } from 'react-router-dom';
+//import { toCountryNews } from "./routes";
+import CountryNews from '../features/CountryNews'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CountryNews />
+    // <Routes>
+    //   <Route path={toCountryNews()} element={ <CountryNews /> } />
+    //   <Route path="/" element={<Navigate to={toCountryNews()} />} />
+    // </Routes>
   );
 }
 
