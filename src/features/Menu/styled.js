@@ -29,19 +29,12 @@ export const Item = styled.li`
     border-bottom: 1px solid ${({ theme }) => theme.color.mercury};
     padding: 10px 0px;
 `;
-const activeClassName = "active";
-export const StyledActiveLink = styled(NavLink).attrs(() => ({
-  activeClassName,
-}))`
+
+export const StyledActiveLink = styled(NavLink)`
     color: ${({ theme }) => theme.color.black};
     text-decoration: none;
-
-    &.${activeClassName}{
-        font-weight: bold;
-    };
     
-
     &:hover{
-        font-weight: bold;
+        font-weight: bold;        
     };
 `;
