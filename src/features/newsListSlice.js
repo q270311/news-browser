@@ -3,23 +3,21 @@ import { createSlice } from "@reduxjs/toolkit";
 const newsListSlice = createSlice({
     name: "news",
     initialState: {
-        countryCode: "US",
-        totalResults: 0,
+        countryCode: "",
         articles: [],
         status: "loading"
     },
     reducers: {
-        fetchDataSuccess: (state, {payload}) => {
-            state.status="loading";            
-            state.totalResults = payload.data.totalResults;
-            state.articles = payload.articles;
+        fetchDataSuccess: (state, { payload }) => {
+            state.status = "loading";
+            state.articles = payload.data.articles;
             state.status = "success";
         },
         fetchDataError: (state) => {
             state.status = "error";
         },
         setCountry: (state, { payload }) => {
-            state.status="loading";
+            state.status = "loading";
             state.countryCode = payload.countryCode;
         },
     },
@@ -32,7 +30,7 @@ export const {
 
 export const selectNewsListState = (state) => state.news;
 export const selectCountry = (state) => selectNewsListState(state).countryCode;
-export const selectTotalResults = (state) => selectNewsListState(state).totalResults;
+export const selectTotalResults = (state) => selectArticles(state).length;
 export const selectArticles = (state) => selectNewsListState(state).articles;
 export const selectStatus = (state) => selectNewsListState(state).status;
 
