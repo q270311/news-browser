@@ -1,5 +1,5 @@
 import { StyledHeader, NavigationLink} from "./styled";
-import SwitchListTile from '../SwitchListTile';
+import ListTileToggleButton from './ListTileToggleButton';
 
 const Header = () => {
   return (
@@ -7,7 +7,7 @@ const Header = () => {
         <NavigationLink to="/" >
           News Browser
         </NavigationLink>
-        <SwitchListTile />
+        <ListTileToggleButton />
       </StyledHeader>
   );
 };
