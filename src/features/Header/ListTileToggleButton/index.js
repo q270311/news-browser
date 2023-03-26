@@ -15,6 +15,7 @@ const ListTileToggleButton = () => {
         onChange={() => { console.log("Lista") }}
         src={viewListIcon}
         alt="List icon"
+        defaultChecked ={true}
       />
       <ImageRadioButton
         id="grid"
