@@ -1,7 +1,7 @@
 import viewListIcon from "./view_list.svg";
 import viewGridIcon from "./grid_view.svg";
 
-const SwitchListTile = () => {
+const ToggleListTile = () => {
   return (
     <div>
       <img src={viewListIcon} alt="List icon" />
@@ -10,4 +10,4 @@ const SwitchListTile = () => {
   );
 };
 
-export default SwitchListTile;
+export default ToggleListTile;
