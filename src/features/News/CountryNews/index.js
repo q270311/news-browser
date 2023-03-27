@@ -2,11 +2,12 @@ import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
 import { setCountry, selectCountry, selectArticles } from "../newsListSlice";
-import { MainWrapper } from '../../common/MainWrapper';
-import Header from "../Header";
-import Footer from "../Footer";
-import Menu from "../Menu";
-import { nanoid } from 'nanoid';
+import { MainWrapper } from '../../../common/MainWrapper';
+import Header from "../../Header";
+import Footer from "../../Footer";
+import Menu from "../../Menu";
+import ListView from "./ListView";
+
 
 const CountryNews = () => {
     const dispatch = useDispatch();
@@ -18,20 +19,12 @@ const CountryNews = () => {
     }, [countryCode, dispatch]); 
 
     return (
-        <MainWrapper
+        <MainWrapper        
             header={<Header />}
             menu={<Menu />}
             content={<>
                 <h1>News from {useSelector(selectCountry)}</h1>
-                <ul>
-                    {articles.map(article => (
-                        <li key={nanoid()}>
-                            Tytuł: {article.title},
-                            Źródło: {article.author},
-                            Data publikacji: {article.publishedAt}
-                        </li>
-                    ))}
-                </ul>
+                <ListView articles={articles} />
             </>}
             footer={<Footer />}
         />

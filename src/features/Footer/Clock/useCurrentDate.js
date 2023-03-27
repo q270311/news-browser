@@ -6,7 +6,7 @@ export const useCurrentDate = () => {
     useEffect(() => {
         const intervalId = setInterval(() => {
             setCurrencyDate(new Date());
-        }, 60*1000);
+        }, 60 * 1000);
         return () => {
             clearInterval(intervalId);
         };

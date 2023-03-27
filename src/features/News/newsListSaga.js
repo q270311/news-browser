@@ -1,6 +1,6 @@
 import { call, put, takeLatest, select } from "redux-saga/effects";
 import { selectCountry, setCountry, fetchDataSuccess, fetchDataError } from "./newsListSlice";
-import { searchNews } from "../core/getDataFromNewsAPI";
+import { searchNews } from "./getDataFromNewsAPI";
 
 function* fetchNewsHandler() {
     try {
