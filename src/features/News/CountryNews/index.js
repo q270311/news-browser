@@ -2,10 +2,10 @@ import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
 import { setCountry, selectCountry, selectArticles } from "../newsListSlice";
-import { MainWrapper } from '../../common/MainWrapper';
-import Header from "../Header";
-import Footer from "../Footer";
-import Menu from "../Menu";
+import { MainWrapper } from '../../../common/MainWrapper';
+import Header from "../../Header";
+import Footer from "../../Footer";
+import Menu from "../../Menu";
 import { nanoid } from 'nanoid';
 
 const CountryNews = () => {
