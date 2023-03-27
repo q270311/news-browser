@@ -2,7 +2,7 @@ import { StyledMenu, Title, List, Item, StyledActiveLink } from "./styled";
 
 const Menu = () => (
   <StyledMenu>
-    <Title>Pańśtwo</Title>
+    <Title>Kraj</Title>
     <List>
       <Item>
         <StyledActiveLink to={`/country/US`} > US  - Stany Zjednoczone</StyledActiveLink>
