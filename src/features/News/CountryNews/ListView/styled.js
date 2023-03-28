@@ -7,7 +7,7 @@ export const Ul = styled.ul`
 `;
 
 export const Li = styled.li`
-  margin: 10px 50px 10px 10px;
+  margin: 15px 50px 15px 10px;
   padding: 0px;
   border: 2px solid ${({ theme }) => theme.color.mercury};
   border-radius: 5px;
