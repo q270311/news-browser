@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <StyledFooter>
       <Clock />
-      <p>Number of articles: {totalResults}</p>
+      <p>Liczba artykułów na stronie: {totalResults}</p>
     </StyledFooter>
   );
 };
