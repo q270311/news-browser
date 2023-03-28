@@ -11,6 +11,9 @@ export const Li = styled.li`
   padding: 0px;
   border: 2px solid ${({ theme }) => theme.color.mercury};
   border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 18px -17px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 2px 2px 18px -17px rgba(66, 68, 90, 1);
+  box-shadow: 2px 2px 18px -17px rgba(66, 68, 90, 1);
 
   &:hover {
     border-color: ${({ theme }) => theme.color.black};

@@ -20,6 +20,9 @@ export const Tile = styled.div`
   border: 2px solid ${({ theme }) => theme.color.mercury};
   border-radius: 5px;
   text-align: justify;
+  -webkit-box-shadow: 2px 2px 18px -17px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 2px 2px 18px -17px rgba(66, 68, 90, 1);
+  box-shadow: 2px 2px 18px -17px rgba(66, 68, 90, 1);
 
   &:hover {
     border-color: ${({ theme }) => theme.color.black};
