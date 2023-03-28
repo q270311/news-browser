@@ -5,19 +5,19 @@ const Menu = () => (
     <Title>Kraj</Title>
     <List>
       <Item>
-        <StyledActiveLink to={`/country/US`} > US  - Stany Zjednoczone</StyledActiveLink>
+        <StyledActiveLink to={`/country/US`} > US  - Stany Zjednoczone </StyledActiveLink>
       </Item>
       <Item>
-        <StyledActiveLink to={`/country/PL`} > PL - Polska</StyledActiveLink>
+        <StyledActiveLink to={`/country/PL`} > PL - Polska </StyledActiveLink>
       </Item>
       <Item>
-        <StyledActiveLink to={`/country/EN`} > EN - Wielka Brytania</StyledActiveLink>
+        <StyledActiveLink to={`/country/EN`} > EN - Wielka Brytania </StyledActiveLink>
       </Item>
       <Item>
-        <StyledActiveLink to={`/country/DE`} > DE - Niemcy</StyledActiveLink>
+        <StyledActiveLink to={`/country/DE`} > DE - Niemcy </StyledActiveLink>
       </Item>
       <Item>
-        <StyledActiveLink to={`/country/FR`} > FR - Francja</StyledActiveLink>
+        <StyledActiveLink to={`/country/FR`} > FR - Francja </StyledActiveLink>
       </Item>
     </List>
   </StyledMenu>

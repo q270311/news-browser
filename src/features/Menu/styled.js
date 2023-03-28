@@ -24,7 +24,7 @@ export const List = styled.ul`
 
 export const Item = styled.li`
     display: flex;
-    justify-content: center;
+    justify-content:flex-start;
     font-size: 15px;
     border-bottom: 1px solid ${({ theme }) => theme.color.mercury};
     padding: 10px 0px;
