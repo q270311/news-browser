@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
 import { setView } from "../../News/newsSlice";
-import viewListIcon from "./view_list.svg";
-import viewGridIcon from "./grid_view.svg";
+import listIcon from "./view_list.svg";
+import gridIcon from "./grid_view.svg";
 import ImageRadioButton from "../../../common/ImageRadioButton";
 import { Wrapper } from "./styled";
 
@@ -17,7 +17,7 @@ const ListTileToggleButton = () => {
         onChange={() => {
           dispatch(setView("list"));
         }}
-        src={viewListIcon}
+        src={listIcon}
         alt="List icon"
         defaultChecked={true}
       />
@@ -28,7 +28,7 @@ const ListTileToggleButton = () => {
         onChange={() => {
           dispatch(setView("grid"));
         }}
-        src={viewGridIcon}
+        src={gridIcon}
         alt="Grid icon"
       />
     </Wrapper>
