@@ -21,3 +21,6 @@ export const Li = styled.li`
 export const Paragraph = styled.p`
   margin: 0px;
 `;
+export const BoldParagraph = styled.span`
+  font-weight: bold;
+`;
