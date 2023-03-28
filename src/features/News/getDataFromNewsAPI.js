@@ -11,7 +11,6 @@ const getApi = async (path, params) => {
         },
     });
 
-    console.log(response);
     if (!response.ok) {
         new Error(response.statusText);
     }
