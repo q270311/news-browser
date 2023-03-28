@@ -1,24 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 import { HashRouter } from "react-router-dom";
 import { Provider } from "react-redux";
-import store from './core/store';
+import store from "./core/store";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./core/GlobalStyle";
 import { theme } from "./core/theme";
-import App from './core/App';
-import reportWebVitals from './reportWebVitals';
+import { PopupProvider } from "react-custom-popup";
+import App from "./core/App";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <HashRouter>
-        <App />
-      </HashRouter>
-    </ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <PopupProvider>
+          <GlobalStyle />
+          <HashRouter>
+            <App />
+          </HashRouter>
+        </PopupProvider>
+      </ThemeProvider>
     </Provider>
   </React.StrictMode>
 );
