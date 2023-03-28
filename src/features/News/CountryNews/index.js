@@ -6,7 +6,7 @@ import { MainWrapper } from '../../../common/MainWrapper';
 import Header from "../../Header";
 import Footer from "../../Footer";
 import Menu from "../../Menu";
-import ListView from "./ListView";
+import GridView from "./GridView";
 
 
 const CountryNews = () => {
@@ -24,7 +24,7 @@ const CountryNews = () => {
             menu={<Menu />}
             content={<>
                 <h1>News from {useSelector(selectCountry)}</h1>
-                <ListView articles={articles} />
+                <GridView articles={articles} />
             </>}
             footer={<Footer />}
         />
