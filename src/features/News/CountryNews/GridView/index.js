@@ -3,7 +3,7 @@ import { Wrapper, Tile, Paragraph, BoldParagraph } from "./styled";
 
 const GridView = ({ articles }) => (
   <Wrapper>
-    {articles.map(article => (
+    {articles && articles.map(article => (
       <Tile key={nanoid()}>
         <Paragraph>
           <BoldParagraph>Data publikacji: </BoldParagraph> 
