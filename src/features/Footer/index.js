@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { StyledFooter } from "./styled";
-import { selectTotalResults } from '../News/newsListSlice';
+import { selectTotalResults } from '../News/newsSlice';
 import Clock from "./Clock";
 
 const Footer = () => {
@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <StyledFooter>
       <Clock />
-      <p>Number of articles: {totalResults}</p>
+      <p>Liczba artykułów na stronie: {totalResults}</p>
     </StyledFooter>
   );
 };
