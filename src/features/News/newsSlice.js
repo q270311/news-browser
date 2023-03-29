@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const newsSlice = createSlice({
   name: "newsSlice",
   initialState: {
-    viewMode: "list",
+    viewMode: "grid",
     countryCode: null,
     articles: null,
     status: "initial",

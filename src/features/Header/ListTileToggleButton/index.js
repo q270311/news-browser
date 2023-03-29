@@ -1,6 +1,6 @@
-import { useDispatch } from "react-redux";
-import { setView } from "../../News/newsSlice";
-import listIcon from "./view_list.svg";
+import { useSelector, useDispatch } from "react-redux";
+import { setView, selectView } from "../../News/newsSlice";
+import listIcon from "./list_view.svg";
 import gridIcon from "./grid_view.svg";
 import ImageRadioButton from "../../../common/ImageRadioButton";
 import { Wrapper } from "./styled";
@@ -19,17 +19,18 @@ const ListTileToggleButton = () => {
         }}
         src={listIcon}
         alt="List icon"
-        defaultChecked={true}
+        defaultChecked={"list" === useSelector(selectView)}
       />
       <ImageRadioButton
         id="grid"
         name="viewMode"
-        value="option2"
+        value="grid"
         onChange={() => {
           dispatch(setView("grid"));
         }}
         src={gridIcon}
         alt="Grid icon"
+        defaultChecked={"grid" === useSelector(selectView)}
       />
     </Wrapper>
   );
