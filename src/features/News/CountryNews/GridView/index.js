@@ -1,6 +1,6 @@
 import { nanoid } from "nanoid";
 import { Wrapper, Tile, Paragraph, BoldParagraph } from "./styled";
-import { AnimationType, OutAnimationType, usePopup } from 'react-custom-popup';
+import { AnimationType, OutAnimationType, usePopup } from "react-custom-popup";
 import NewsPopup from "../NewsPopup";
 
 const GridView = ({ articles }) => {
@@ -8,20 +8,22 @@ const GridView = ({ articles }) => {
 
   return (
     <Wrapper>
-      {articles &&
-        articles.map((article) => (
-          <Tile 
+      {articles.map((article) => (
+          <Tile
             key={nanoid()}
             onClick={() =>
               showModal(
-                  <NewsPopup 
-                    content={article.content}
-                    author={article.author} 
-                    directUrl={article.url} 
-                  />, {
-                animationType: AnimationType.SLIDE_IN_UP,
-                outAnimationType: OutAnimationType.SLIDE_OUT_UP,
-              })}
+                <NewsPopup
+                  content={article.content}
+                  author={article.author}
+                  directUrl={article.url}
+                />,
+                {
+                  animationType: AnimationType.SLIDE_IN_UP,
+                  outAnimationType: OutAnimationType.SLIDE_OUT_UP,
+                }
+              )
+            }
           >
             {article.urlToImage && (
               <img src={article.urlToImage} alt="miniatura" width="200px" />
@@ -37,7 +39,8 @@ const GridView = ({ articles }) => {
               <BoldParagraph>Tytuł:</BoldParagraph> {article.title}
             </Paragraph>
           </Tile>
-        ))}
+        ))
+      }
     </Wrapper>
   );
 };

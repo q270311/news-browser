@@ -6,6 +6,7 @@ import {
   selectArticles,
   selectView,
   selectStatus,
+  selectTotalResults,
 } from "../newsSlice";
 import { MainWrapper } from "../../../common/MainWrapper";
 import Header from "../../Header";
@@ -15,6 +16,7 @@ import GridView from "./GridView";
 import ListView from "./ListView";
 import Loader from "./Loader";
 import Error from "./Error";
+import NoResults from "./NoResults";
 
 const CountryNews = () => {
   const dispatch = useDispatch();
@@ -22,6 +24,7 @@ const CountryNews = () => {
   const articles = useSelector(selectArticles);
   const viewMode = useSelector(selectView);
   const status = useSelector(selectStatus);
+  const totalResults = useSelector(selectTotalResults);
 
   useEffect(() => {
     dispatch(setCountry({ countryCode: countryCode }));
@@ -34,6 +37,7 @@ const CountryNews = () => {
       content={
         status === "loading" ? <Loader /> :
         status === "error" ? <Error /> :
+        totalResults === 0 ? <NoResults /> :
         <>
           {viewMode === "list" && <ListView articles={articles} />}
           {viewMode === "grid" && <GridView articles={articles} />}
