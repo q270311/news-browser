@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   align-items: center;
 `;
 
-export const ErrorIcon = styled(Error)`  
+export const ErrorIcon = styled(Error)`
   height: 50px;
   width: 50px;
   color: gray;
