@@ -1,5 +1,5 @@
 import { StyledHeader, NavigationLink} from "./styled";
-import ListTileToggleButton from './ListTileToggleButton';
+import ListTileToggleButton from './ViewToggleButton';
 
 const Header = () => {
   return (
