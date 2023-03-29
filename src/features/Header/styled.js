@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 export const StyledHeader = styled.header`
   grid-column: span 2;
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 16px 50px;
@@ -14,7 +14,7 @@ export const StyledHeader = styled.header`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileDevice}px) {
     height: auto;
-  } 
+  }
 `;
 
 export const NavigationLink = styled(NavLink)`
@@ -25,5 +25,10 @@ export const NavigationLink = styled(NavLink)`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileDevice}px) {
     font-size: 25px;
-  } 
+  }
+
+  :hover {
+    color: ${({ theme }) => theme.color.white};
+    text-decoration: none;
+  }
 `;
