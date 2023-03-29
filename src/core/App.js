@@ -8,6 +8,7 @@ function App() {
     <Routes>
       <Route path={toCountryNews()} element={<CountryNews />} />
       <Route path="/" element={<WelcomeSite />} />
+      <Route path="*" element={<WelcomeSite />}/>
     </Routes>
   );
 }
