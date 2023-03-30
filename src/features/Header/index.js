@@ -1,5 +1,6 @@
 import { StyledHeader, NavigationLink} from "./styled";
 import ListTileToggleButton from './ViewToggleButton';
+import LanguageToggleButton from './LanguageToggleButton'
 
 const Header = () => {
   return (
@@ -8,6 +9,7 @@ const Header = () => {
           News Browser
         </NavigationLink>
         <ListTileToggleButton />
+        <LanguageToggleButton />
       </StyledHeader>
   );
 };
