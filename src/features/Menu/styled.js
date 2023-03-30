@@ -10,8 +10,8 @@ export const StyledMenu = styled.menu`
 `;
 
 export const Title = styled.p`
-  font-size: 20px;
-  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
   background: ${({ theme }) => theme.color.mercury};
   color: ${({ theme }) => theme.color.black};  
 `;
@@ -23,8 +23,6 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-    display: flex;
-    justify-content:flex-start;
     font-size: 15px;
     border-bottom: 1px solid ${({ theme }) => theme.color.mercury};
     padding: 10px 0px;
