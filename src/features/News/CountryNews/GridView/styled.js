@@ -8,6 +8,10 @@ export const Wrapper = styled.div`
   grid-row: auto;
   gap: 12px;
 
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileDevice}px) {
+    font-size: small;
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoint.smallDevice}px) {
     grid-template-columns: 1fr;
     gap: 6px;

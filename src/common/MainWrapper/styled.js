@@ -7,4 +7,8 @@ export const PageWrapper = styled.div`
   grid-template-columns: 20% 1fr;
   grid-row: auto;
   grid-gap: 20px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileDevice}px) {
+    grid-gap: 10px;
+  }
 `;
