@@ -1,8 +1,16 @@
 # News Browser
 
-### Description 
-> Here, you can easily search for worldwide news. 
+![How it us gif](src/img/news-browser.gif)
 
+### Description 
+> Here, you can easily search and browse for worldwide news. 
+
+On the left side of the window you can select the country from which you want to read news. The list of countries will be expanded regularly. 
+The news is displayed in the main part of the window in the form of a list or grid, which can be changed using the buttons in the header of the page. 
+By default, news items are sorted from newest to oldest by the date they were added to the database. 
+By clicking on each news item, you can see details, including a direct link to the article. 
+It is also possible to change the language of the application to Polish or English. 
+At the bottom of the page there is the current time and the number of news on the page.
 ### Contributors
 > The project was created by Michał Bałdyga
 
