@@ -15,6 +15,10 @@ export const Li = styled.li`
   -moz-box-shadow: 2px 2px 18px -17px rgba(66, 68, 90, 1);
   box-shadow: 2px 2px 18px -17px rgba(66, 68, 90, 1);
 
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileDevice}px) {
+    font-size: small;
+  }
+
   &:hover {
     border-color: ${({ theme }) => theme.color.black};
     cursor: pointer;
