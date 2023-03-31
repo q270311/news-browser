@@ -9,7 +9,7 @@ export const transcriptions = [
     menu:{
       title:"Państwo",
       countries:[
-        {name:"Stany Zjednoczone", symbol:"USA",},
+        {name:"Stany Zjednoczone", symbol:"US",},
         {name:"Polska", symbol:"PL",},
         {name:"Wielka Brytania", symbol:"EN",},
         {name:"Niemcy", symbol:"DE",},
@@ -27,7 +27,7 @@ export const transcriptions = [
     menu:{
       title:"Countries",
       countries:[
-        {name:"United States", symbol:"USA",},
+        {name:"United States", symbol:"US",},
         {name:"Poland", symbol:"PL",},
         {name:"Great Britain", symbol:"EN",},
         {name:"Germany", symbol:"DE",},
