@@ -1,5 +1,6 @@
 
 import { useCurrentDate } from "./useCurrentDate";
+import { useTranslation } from "../../../core/useTranslation";
 import { Time } from "./styled";
 
 const formatDate = (date) => date.toLocaleTimeString(undefined, {
@@ -9,10 +10,11 @@ const formatDate = (date) => date.toLocaleTimeString(undefined, {
 
 const Clock = () => {
     const date = useCurrentDate();
+    const translation = useTranslation();
 
     return (
         <Time>
-            Aktualny czas: {formatDate(date)}
+            {translation.footer.currentTime}: {formatDate(date)}
         </Time>
     );
 };
