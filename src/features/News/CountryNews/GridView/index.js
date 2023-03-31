@@ -1,7 +1,7 @@
 import { nanoid } from "nanoid";
 import { Wrapper, Tile, Paragraph, BoldParagraph } from "./styled";
 import { AnimationType, OutAnimationType, usePopup } from "react-custom-popup";
-import NewsPopup from "../NewsPopup";
+import NewsPopup from "../../../../common/NewsPopup";
 
 const GridView = ({ articles }) => {
   const { showModal } = usePopup();
