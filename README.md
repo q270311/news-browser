@@ -1,7 +1,8 @@
 # News Browser
 
 ![How it us gif](src/img/news-browser.gif)
-
+### Demo
+https://q270311.github.io/news-browser/
 ### Description 
 > Here, you can easily search and browse for worldwide news. 
 
