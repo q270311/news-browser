@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const Radio = styled.input.attrs({ type: 'radio' })`    
+export const Radio = styled.input.attrs({ type: 'radio' })`
   display: none;
-    
+
   &:checked + label {
     border: 2px solid white;
   }

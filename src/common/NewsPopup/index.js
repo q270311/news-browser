@@ -1,4 +1,4 @@
-import { Body, Paragraph, BoldParagraph } from "./styled";
+import { Body, Paragraph, BoldParagraph } from './styled';
 
 const NewsPopup = ({ content, extraContent, author, directUrl }) => {
   return (
@@ -11,7 +11,11 @@ const NewsPopup = ({ content, extraContent, author, directUrl }) => {
       {directUrl && (
         <Paragraph>
           <BoldParagraph>Oryginalny atrykuł:</BoldParagraph>
-          <a href={directUrl} target="_blank" rel="noreferrer">
+          <a
+            href={directUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
             {directUrl}
           </a>
         </Paragraph>

@@ -1,9 +1,9 @@
-import { MainWrapper } from "../../../common/MainWrapper";
-import Header from "../../Header";
-import Footer from "../../Footer";
-import Menu from "../../Menu";
-import { Welcome } from "./styled";
-import { useTranslation } from "../../../core/useTranslation";
+import { MainWrapper } from '../../../common/MainWrapper';
+import Header from '../../Header';
+import Footer from '../../Footer';
+import Menu from '../../Menu';
+import { Welcome } from './styled';
+import { useTranslation } from '../../../core/useTranslation';
 
 const WelcomeSite = () => {
   const translation = useTranslation();

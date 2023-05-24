@@ -1,5 +1,5 @@
-import { Wrapper, Spinner } from "./styled";
-import { useTranslation } from "../../../../core/useTranslation";
+import { Wrapper, Spinner } from './styled';
+import { useTranslation } from '../../../../core/useTranslation';
 
 const Loader = () => {
   const translation = useTranslation();

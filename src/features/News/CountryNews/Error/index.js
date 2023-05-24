@@ -1,9 +1,9 @@
-import { Wrapper, ErrorIcon } from "./styled";
-import { useTranslation } from "../../../../core/useTranslation";
+import { Wrapper, ErrorIcon } from './styled';
+import { useTranslation } from '../../../../core/useTranslation';
 
 const Error = () => {
   const translation = useTranslation();
-  
+
   return (
     <Wrapper>
       <p>{translation.news.error.line1}</p>

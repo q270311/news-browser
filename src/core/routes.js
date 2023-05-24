@@ -1,1 +1,1 @@
-export const toCountryNews = () => "/country/:countryCode";
+export const toCountryNews = () => '/country/:countryCode';

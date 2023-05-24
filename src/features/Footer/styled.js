@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledFooter = styled.footer`
   grid-column: span 2;
@@ -12,5 +12,5 @@ export const StyledFooter = styled.footer`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileDevice}px) {
     height: auto;
-  } 
+  }
 `;

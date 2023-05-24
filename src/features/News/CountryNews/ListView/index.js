@@ -1,7 +1,7 @@
-import { nanoid } from "nanoid";
-import { Ul, Li, Paragraph, BoldParagraph } from "./styled";
-import { AnimationType, OutAnimationType, usePopup } from "react-custom-popup";
-import NewsPopup from "../../../../common/NewsPopup";
+import { nanoid } from 'nanoid';
+import { Ul, Li, Paragraph, BoldParagraph } from './styled';
+import { AnimationType, OutAnimationType, usePopup } from 'react-custom-popup';
+import NewsPopup from '../../../../common/NewsPopup';
 
 const ListView = ({ articles }) => {
   const { showModal } = usePopup();
@@ -26,9 +26,8 @@ const ListView = ({ articles }) => {
           }
         >
           <Paragraph>
-            <BoldParagraph> Data publikacji: </BoldParagraph>{" "}
-            {article.publishedAt.substring(0, 10)},
-            <BoldParagraph> Źródło: </BoldParagraph> {article.author}
+            <BoldParagraph> Data publikacji: </BoldParagraph> {article.publishedAt.substring(0, 10)}
+            ,<BoldParagraph> Źródło: </BoldParagraph> {article.author}
           </Paragraph>
           <Paragraph>
             <BoldParagraph>Tytuł:</BoldParagraph> {article.title}

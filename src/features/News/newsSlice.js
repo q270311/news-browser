@@ -1,24 +1,24 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const newsSlice = createSlice({
-  name: "newsSlice",
+  name: 'newsSlice',
   initialState: {
-    viewMode: "grid",
+    viewMode: 'grid',
     countryCode: null,
     articles: null,
-    status: "initial",
+    status: 'initial',
   },
   reducers: {
     fetchDataSuccess: (state, { payload }) => {
-      state.status = "loading";
+      state.status = 'loading';
       state.articles = payload.data.articles;
-      state.status = "success";
+      state.status = 'success';
     },
     fetchDataError: (state) => {
-      state.status = "error";
+      state.status = 'error';
     },
     setCountry: (state, { payload }) => {
-      state.status = "loading";
+      state.status = 'loading';
       state.countryCode = payload.countryCode;
     },
     setView: (state, { payload }) => {
@@ -26,8 +26,7 @@ const newsSlice = createSlice({
     },
   },
 });
-export const { fetchDataSuccess, fetchDataError, setCountry, setView } =
-  newsSlice.actions;
+export const { fetchDataSuccess, fetchDataError, setCountry, setView } = newsSlice.actions;
 
 export const selectNewsState = (state) => state.newsSlice;
 export const selectCountry = (state) => selectNewsState(state).countryCode;

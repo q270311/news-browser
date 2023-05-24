@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { ReactComponent as Error } from "./error.svg";
+import styled from 'styled-components';
+import { ReactComponent as Error } from './error.svg';
 
 export const Wrapper = styled.div`
   display: flex;

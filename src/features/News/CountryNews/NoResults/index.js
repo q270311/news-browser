@@ -1,6 +1,6 @@
-import { Wrapper } from "./styled";
-import noResultsImg from "./no-results.png";
-import { useTranslation } from "../../../../core/useTranslation";
+import { Wrapper } from './styled';
+import noResultsImg from './no-results.png';
+import { useTranslation } from '../../../../core/useTranslation';
 
 const NoResults = () => {
   const translation = useTranslation();
@@ -8,7 +8,10 @@ const NoResults = () => {
   return (
     <Wrapper>
       <p>{translation.news.noResults}</p>
-      <img src={noResultsImg} alt="no results" />
+      <img
+        src={noResultsImg}
+        alt="no results"
+      />
     </Wrapper>
   );
 };

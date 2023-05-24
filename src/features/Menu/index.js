@@ -1,12 +1,5 @@
-import {
-  Wrapper,
-  StyledMenu,
-  Title,
-  List,
-  Item,
-  StyledActiveLink,
-} from "./styled";
-import { useTranslation } from "../../core/useTranslation";
+import { Wrapper, StyledMenu, Title, List, Item, StyledActiveLink } from './styled';
+import { useTranslation } from '../../core/useTranslation';
 
 const Menu = () => {
   const translation = useTranslation();
@@ -18,9 +11,7 @@ const Menu = () => {
         <List>
           {translation.menu.countries.map((country) => (
             <Item>
-              <StyledActiveLink to={`/country/${country.symbol}`}>
-                {country.name}
-              </StyledActiveLink>
+              <StyledActiveLink to={`/country/${country.symbol}`}>{country.name}</StyledActiveLink>
             </Item>
           ))}
         </List>

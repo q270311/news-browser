@@ -1,10 +1,7 @@
-import { all } from "redux-saga/effects";
-import { watchFetchNews } from "../features/News/newsSaga";
-import { watchFetchLanguageApp } from "../features/Header/languageAppSaga";
+import { all } from 'redux-saga/effects';
+import { watchFetchNews } from '../features/News/newsSaga';
+import { watchFetchLanguageApp } from '../features/Header/languageAppSaga';
 
 export default function* rootSaga() {
-  yield all([
-    watchFetchNews(), 
-    watchFetchLanguageApp()
-  ]);
+  yield all([watchFetchNews(), watchFetchLanguageApp()]);
 }

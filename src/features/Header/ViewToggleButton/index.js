@@ -1,12 +1,12 @@
-import { useSelector, useDispatch } from "react-redux";
-import { setView, selectView } from "../../News/newsSlice";
-import listIcon from "./list_view.svg";
-import gridIcon from "./grid_view.svg";
-import ImageRadioButton from "../../../common/ImageRadioButton";
-import { Wrapper } from "./styled";
+import { useSelector, useDispatch } from 'react-redux';
+import { setView, selectView } from '../../News/newsSlice';
+import listIcon from './list_view.svg';
+import gridIcon from './grid_view.svg';
+import ImageRadioButton from '../../../common/ImageRadioButton';
+import { Wrapper } from './styled';
 
 const ListTileToggleButton = () => {
-  const dispatch = useDispatch(); 
+  const dispatch = useDispatch();
 
   return (
     <Wrapper>
@@ -15,22 +15,22 @@ const ListTileToggleButton = () => {
         name="viewMode"
         value="list"
         onChange={() => {
-          dispatch(setView("list"));
+          dispatch(setView('list'));
         }}
         src={listIcon}
         alt="List icon"
-        defaultChecked={"list" === useSelector(selectView)}
+        defaultChecked={'list' === useSelector(selectView)}
       />
       <ImageRadioButton
         id="grid"
         name="viewMode"
         value="grid"
         onChange={() => {
-          dispatch(setView("grid"));
+          dispatch(setView('grid'));
         }}
         src={gridIcon}
         alt="Grid icon"
-        defaultChecked={"grid" === useSelector(selectView)}
+        defaultChecked={'grid' === useSelector(selectView)}
       />
     </Wrapper>
   );

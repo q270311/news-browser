@@ -1,18 +1,21 @@
-import { Radio, Label } from "./styled";
+import { Radio, Label } from './styled';
 
-const ImageRadioButton = ({id, name, value, onChange, src, alt, defaultChecked}) => (
-    <>
-      <Radio
-        id={id}
-        name={name}
-        value={value}
-        onChange={onChange} 
-        defaultChecked={defaultChecked}
+const ImageRadioButton = ({ id, name, value, onChange, src, alt, defaultChecked }) => (
+  <>
+    <Radio
+      id={id}
+      name={name}
+      value={value}
+      onChange={onChange}
+      defaultChecked={defaultChecked}
+    />
+    <Label htmlFor={id}>
+      <img
+        src={src}
+        alt={alt}
       />
-      <Label htmlFor={id}>
-        <img src={src} alt={alt} />
-      </Label>
-    </>
+    </Label>
+  </>
 );
 
 export default ImageRadioButton;

@@ -1,4 +1,4 @@
-import { PageWrapper } from "./styled";
+import { PageWrapper } from './styled';
 
 export const MainWrapper = ({ header, menu, content, footer }) => (
   <PageWrapper>
